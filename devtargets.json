@@ -1,0 +1,10 @@
+[
+  {
+    "labels": {
+      "job": "prometheus",
+      "env": "dev"
+    },
+    "targets": [
+      "develastic4.northeurope.cloudapp.azure.com:9182","devsql1.northeurope.cloudapp.azure.com:9182","devwks.northeurope.cloudapp.azure.com:9182","rstead-iis02.northeurope.cloudapp.azure.com:9182"]
+  }
+]
