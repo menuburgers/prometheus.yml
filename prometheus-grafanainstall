@@ -1,0 +1,23 @@
+#install prometheus
+sudo apt-get install -y prometheus
+
+#prepare to install grafana 
+sudo apt-get install -y apt-transport-https
+sudo apt-get install -y software-properties-common wget
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+
+#add stable repository
+echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+sudo apt-get update 
+#install grafana 
+sudo apt-get install -y grafana-enterprise
+#enable grafana 
+sudo systemctl enable grafana-server
+#install yml file 
+sudo wget https://raw.githubusercontent.com/menuburgers/prometheus.yml/main/prometheus.yml
+#move file to /etc/prometheus
+sudo cp prometheus.yml /etc/prometheus/prometheus.yml
+
+sudo systemctl start grafana-server
+
+sudo systemctl restart prometheus
