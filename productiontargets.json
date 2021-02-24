@@ -1,0 +1,10 @@
+[
+  {
+    "labels": {
+      "job": "prometheus",
+      "env": "production"
+    },
+    "targets": [
+      "infelseuprd01.northeurope.cloudapp.azure.com:9182","infrdp-eu-prd02.northeurope.cloudapp.azure.com:9182","yabberupload.northeurope.cloudapp.azure.com:9182","infsftp-eu-prd02.northeurope.cloudapp.azure.com:9182","infssqleuprd01.northeurope.cloudapp.azure.com:9182","rsteadnagios.northeurope.cloudapp.azure.com:9182","inciteprometheus.northeurope.cloudapp.azure.com:9182","rsteadiisprd01.northeurope.cloudapp.azure.com:9182"]
+  }
+]
