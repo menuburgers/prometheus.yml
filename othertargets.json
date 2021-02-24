@@ -1,0 +1,11 @@
+[
+  {
+    "labels": {
+      "job": "prometheus",
+      "env": "other"
+    },
+    "targets": [
+      "saltmaster.northeurope.cloudapp.azure.com:9182"
+    ]
+  }
+]
